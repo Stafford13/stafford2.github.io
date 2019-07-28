@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lucky Sevens</title>
+  </head>
+  <body>
+    <div style="text-align:center;" class="row" align="center">
+      <h1>Lucky Sevens</h1>
+      </div>
+    <div style="text-align:center;" class="row">
+      <article class="col-4">
+        <h3>Starting Bet:</h3>
+      </article>
+      <article class="col-2">
+        <input type="number" id="startingBet" value="0">
+      </article>
+    </div>
+    <br>
+    <div style="text-align:center;" class="row">
+      <button onclick ="playGame()" id="play">Play</button>
+    </div><br>
+    <table id="finished" align="center" style="display:none;">
+      <thead>
+      <tr>
+        <th><h1>Results</h1></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Starting Bet</td>
+          <td><span id="starting"></span></td>
+        </tr>
+        <tr>
+          <td>Total Rolls Before Going Broke</td>
+          <td><span id="rollNumber"></span></td>
+        </tr>
+        <tr>
+          <td>Highest Amount Won</td>
+          <td><span id="won"></span></td>
+        </tr>
+        <tr>
+          <td>Roll Count at Highest Amount Won</td>
+          <td><span id="rollsAtMax"></span></td>
+        </tr>
+      </tbody>
+    </table>
+      <script type="text/javascript" src="luckySevens.js"></script>
+  </body>
+  </html>
